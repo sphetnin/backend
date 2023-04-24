@@ -21,7 +21,7 @@ app.get('/helloworld', function (req, res, next) {
 app.get('/users', function (req, res, next) {
 // simple query
 connection.query(
-    'SELECT * FROM `app`',
+    'SELECT * FROM `users`',
     function(err, results, fields) {
         res.json(results)
     }
